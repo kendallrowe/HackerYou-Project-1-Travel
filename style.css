@@ -1,0 +1,309 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/*Accessibility Skip Link*/
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+/* Front Formatting*/
+h3,
+p {
+	color: #777777;
+}
+
+h1,
+h2,
+a {
+	color: #333333;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 68px;
+	margin: 0;
+
+}
+
+h2 {
+	font-size: 39px;
+}
+
+h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+footer p {
+	font-size: 20px;
+	font-weight: 500;
+	color: #333333;
+}
+
+.copyright p{
+	font-size: 20px;
+	color: #777777;
+}
+
+a {
+	font-size: 19px;
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+/*Logo Formatting*/
+h2.logo {
+	font-size: 38px;
+	color: #005769;
+	margin: 0;
+	float: left;
+}
+
+/*Read More Button*/
+.blueButton {
+	border-radius: 10px;
+    background: #16D6D1;
+	padding: 10px 30px 10px 30px;
+	text-transform: uppercase;
+}
+
+/* wrapper styles */
+.headingRow {
+	padding-top: 5vh;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 97%;
+}
+
+/*Hero Formatting*/
+.hero {
+	min-height: 80vh;
+	background-image: url("assets/image-main.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+/*Header Spacing*/
+header {
+	margin-top: 20vh;
+}
+
+.restrictHeading {
+	max-width: 60%;
+}
+
+.travel h2 {
+	margin: 10px 0;
+	float: left;
+	width: 30%;
+}
+
+/*Navigation List*/
+
+.mainMenu {
+	margin: 0;
+	float: right;
+	width: 70%;
+}
+
+.mainMenu li {
+	float: right;
+	position: relative;
+}
+
+.mainMenu li a{
+	padding: 10px 15px;
+	margin-left: 10px;
+
+	display: inline-block;
+}
+
+.mainMenu li:hover a, .blueButton:hover{
+	background: linear-gradient(to left, #005769, #005769);
+	color: white;
+}
+
+.mainMenu li:hover a{
+	color: white;
+}
+
+/*Drop down sub menus*/
+.subMenu {
+	padding: 0;
+	position: absolute;
+	text-align: left;
+	display: none;
+}
+
+.subMenu li {
+	float: none;
+}
+
+.subMenu li a{
+	margin-left: 10px;
+	display: block;
+}
+
+.subMenu li:hover a {
+	background: linear-gradient(to left, #16D6D1, #16D6D1);
+}
+
+/*Create drop down for blog and about submenus*/
+.about:hover ul , .blog:hover ul{
+    display: block;
+}
+
+/*Gallery Formatting*/
+.gallery {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.gallery img {
+	object-fit: cover;
+}
+
+.firstGallery, .secondGallery{
+	margin-bottom: 20px;
+	height: auto;
+}
+
+/*Set sizing for each singlephoto div container and img*/
+.singlePhoto {
+	width: calc(33.33% - 20px);
+	float: left;
+}
+
+.singlePhoto,
+.singlePhoto img {
+	height: 531.53px;
+	position: relative;
+}
+
+/*Set sizing for picture/read more combo*/
+.doublePics img,
+.featureReadMore {
+	height: 265.77px;
+}
+
+.featureReadMore {
+	background-color: #F6F8FA;
+	padding: 30px 0 0 0;
+	text-align: center;
+	overflow: auto;
+}
+
+.doublePics {
+	width: calc(66.67% - 20px);
+	float: left;
+}
+
+/*Set specific margins to allow for positioning of each photo position on each row*/
+.firstSinglePic {
+	margin-right: 20px;
+}
+
+.lastSinglePic {
+	margin-left: 20px;
+}
+
+.featureReadMore h3 {
+	margin: 0;
+}
+
+.featureReadMore h2 {
+	margin: 20px 0 30px 0;
+}
+
+/*Apply hover effects to gallery items*/
+.hoverRead{
+	display: none;
+}
+
+.doublePics:hover img{
+	opacity: .5;
+}
+
+.singlePhoto:hover .hoverRead {
+	text-align: center;
+	padding-top: 40%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(to left, rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+}
+
+/*Footer*/
+footer {
+	background-color: #F6F8FA;
+	position: relative;
+	padding-top: 5vh;
+}
+
+.footerList ul li {
+	padding-bottom: 25px;
+}
+
+.footerDiv {
+	float: left;
+}
+
+.footerLogo {
+	height: 35vh;
+	width: 30%;
+}
+
+.footerList {
+	width: 15%;
+	min-width: 75px;
+}
+
+.webCopy {
+	width: 35%;
+	float: right;
+}
+
+.webCopy p {
+	margin: 0;
+	line-height: 1.5em;
+}
+
+.copyright {
+	clear: both;
+	border-top: solid 1px #777777;
+	padding-bottom: 10px;
+}
